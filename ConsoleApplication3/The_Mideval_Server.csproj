@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{961351BE-A946-40C2-AB0A-705E7C88493F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ConsoleApplication3</RootNamespace>
+    <AssemblyName>ConsoleApplication3</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="building\BlueBuilding.cs" />
+    <Compile Include="building\Building.cs" />
+    <Compile Include="building\GreenBuilding.cs" />
+    <Compile Include="building\purpleBuilding\Blacksmithroom.cs" />
+    <Compile Include="building\purpleBuilding\Cemetery.cs" />
+    <Compile Include="building\purpleBuilding\Checkpoint.cs" />
+    <Compile Include="building\purpleBuilding\Dragongate.cs" />
+    <Compile Include="building\purpleBuilding\Fortress.cs" />
+    <Compile Include="building\purpleBuilding\Hauntedhouse.cs" />
+    <Compile Include="building\purpleBuilding\Hogwarts.cs" />
+    <Compile Include="building\purpleBuilding\Lab.cs" />
+    <Compile Include="building\purpleBuilding\Library.cs" />
+    <Compile Include="building\purpleBuilding\Observatory.cs" />
+    <Compile Include="building\purpleBuilding\University.cs" />
+    <Compile Include="building\RedBuilding.cs" />
+    <Compile Include="building\YellowBuilding.cs" />
+    <Compile Include="character\Architect.cs" />
+    <Compile Include="character\Assasin.cs" />
+    <Compile Include="character\Bishop.cs" />
+    <Compile Include="character\Character.cs" />
+    <Compile Include="character\General.cs" />
+    <Compile Include="character\King.cs" />
+    <Compile Include="character\Magician.cs" />
+    <Compile Include="character\Merchant.cs" />
+    <Compile Include="character\Theif.cs" />
+    <Compile Include="Client.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="building\PurpleBuilding.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
