@@ -8,5 +8,10 @@ namespace ConsoleApplication3.building.purpleBuilding
 {
     class Hogwarts : PurpleBuilding
     {
+        public Hogwarts()
+        {
+            this.BuildingName = "Hogwarts";
+            this.BuildingCost = 6;
+        }
     }
 }

@@ -8,5 +8,10 @@ namespace ConsoleApplication3.building.purpleBuilding
 {
     class Library : PurpleBuilding
     {
+        public Library()
+        {
+            this.BuildingName = "Library";
+            this.BuildingCost = 6;
+        }
     }
 }

@@ -8,5 +8,10 @@ namespace ConsoleApplication3.building.purpleBuilding
 {
     class Checkpoint : PurpleBuilding
     {
+        public Checkpoint()
+        {
+            this.BuildingName = "Check point";
+            this.BuildingCost = 3;
+        }
     }
 }

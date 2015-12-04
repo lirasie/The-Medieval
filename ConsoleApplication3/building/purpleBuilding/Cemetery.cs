@@ -8,5 +8,10 @@ namespace ConsoleApplication3.building.purpleBuilding
 {
     class Cemetery : PurpleBuilding
     {
+        public Cemetery()
+        {
+            this.BuildingName = "Cemetery";
+            this.BuildingCost = 5;
+        }
     }
 }

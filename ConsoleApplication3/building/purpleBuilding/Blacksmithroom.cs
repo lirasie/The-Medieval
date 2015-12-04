@@ -11,6 +11,13 @@ namespace ConsoleApplication3.building.purpleBuilding
         public Blacksmithroom()
         {
             this.BuildingName = "Blacksmith store";
+            this.BuildingCost = 8;
+        }
+        public override void BuildingFunction(Client me)
+        {
+            me.UserCoins = -3;
+            //카드 뽑기는 어떻게 하더라..
+
         }
     }
 }

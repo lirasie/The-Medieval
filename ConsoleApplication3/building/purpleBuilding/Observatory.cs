@@ -8,5 +8,10 @@ namespace ConsoleApplication3.building.purpleBuilding
 {
     class Observatory : PurpleBuilding
     {
+        public Observatory()
+        {
+            this.BuildingName = "Observatory";
+            this.BuildingCost = 5;
+        }
     }
 }

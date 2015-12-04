@@ -11,6 +11,7 @@ namespace ConsoleApplication3.building.purpleBuilding
         public Hauntedhouse()
         {
             this.BuildingName = "Haunted House";
+            this.BuildingCost = 2;
         }
     }
 }
